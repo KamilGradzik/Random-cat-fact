@@ -19,16 +19,5 @@ namespace Backend.Controllers
             CatFact CatFact = await _catFactService.GetRandomCatFact();
             return Ok(CatFact);
         }
-
-        // [HttpGet]
-        // public async Task<IActionResult> DownloadCatFacts()
-        // {
-        //     CatFact CatFact = await _catFactService.GetRandomCatFact();
-        //     if (CatFact != null)
-        //     {
-        //         return Ok(CatFact);
-        //     }
-        //     return NotFound("Cat fact cannot be found!");
-        // }
     }
 }
