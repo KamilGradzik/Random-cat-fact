@@ -2,7 +2,7 @@
 /Backend/obj
 /Backend/appsettings.json
 /Backend/appsettings.Development.json
-/Backend/Data/cat_facts.txt
+/Backend/Data/*
 
 /Frontend/node_modules
 /Frontend/build

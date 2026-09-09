@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Backend.Controllers
 {
-    [Route("api/cat-facts/")]
+    [Route("api/cat-facts/fact")]
     public class CatFactController : Controller
     {   
         private readonly ICatFactService _catFactService;
