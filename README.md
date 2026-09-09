@@ -23,7 +23,7 @@
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `/api/cat-fact/` | `Gets single random cat fact from external API.` |
+| `GET` | `/api/cat-fact/fact` | `Gets single random cat fact from external API.` |
 
 ## Credits
 
