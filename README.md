@@ -32,14 +32,14 @@
 
 ### Prerequisites
 
-Make sure you have installed:
+[`Make sure you have installed:`]
 
-- [.NET SDK](https://dotnet.microsoft.com/download)
+- [.NET SDK 9.0](https://dotnet.microsoft.com/download)
 - [Node.js](https://nodejs.org/)
 
 ### Running the Application
 
-The project consists of two parts: **Backend** and **Frontend**.
+[`The project consists of two parts: **Backend** and **Frontend**.`]
 
 #### 1. Start the Backend
 
@@ -54,7 +54,7 @@ The .NET Web API will start on the configured local URL.
 
 #### 2. Start the Frontend
 
-Open another terminal and run:
+[`Open another terminal and run:`]
 
 ```bash
 cd Frontend
@@ -62,12 +62,12 @@ npm install
 npm run dev
 ```
 
-The React application will start on the local development server.
-Open the URL displayed in the terminal to access the application.
+[`The React application will start on the local development server.
+Open the URL displayed in the terminal to access the application.`]
 
 
 ## Credits
 
-- <a target="_blank" href="https://icon-icons.com/authors/878-community">Cat Icon by Community.</a>
-- <a target="_blank" href="https://www.pexels.com/pl-pl/zdjecie/kot-wasy-fotografia-zwierzecia-zwierze-domowe-10856738/">Cat Photo by Owen Mao.</a>
-- <a target="_blank" href="https://www.pexels.com/pl-pl/zdjecie/kot-fotografia-zwierzecia-zwierze-domowe-koci-11642744/">Cat Photo by Owen Mao.</a>
+- [Cat Icon by Community.](https://icon-icons.com/authors/878-community)
+- [Cat Photo by Owen Mao.](https://www.pexels.com/pl-pl/zdjecie/kot-wasy-fotografia-zwierzecia-zwierze-domowe-10856738/)
+- [Cat Photo by Owen Mao.](https://www.pexels.com/pl-pl/zdjecie/kot-fotografia-zwierzecia-zwierze-domowe-koci-11642744/)
