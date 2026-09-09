@@ -61,7 +61,7 @@ dotnet run
 ```bash
 cd Frontend
 npm install
-npm run dev
+npm start
 ```
 
 `The React application will start on the local development server.
