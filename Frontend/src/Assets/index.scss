@@ -1,13 +1,171 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Archivo Black", sans-serif;
+  #root{
+    height: 100vh;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    .App{
+      height: 100%;
+      width: 100%;
+      background-image: url("./Images/pexels-owen-11642744.jpg");
+      background-position: center;
+      background-size: cover;
+      filter: grayscale(100%) brightness(90%);
+      &::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;     
+        z-index: 1;
+        background:
+          linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+          ),
+          radial-gradient(
+            ellipse at center,
+            transparent 15%,
+            rgba(0, 0, 0, 0.25) 50%,
+            rgba(0, 0, 0, 0.9) 100%
+        );
+      }
+      .cat-fact-wrapper{
+          display: flex;
+          height: 100%;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          .cat-fact-container{
+            z-index: 2;
+            max-width: 600px;
+            width: 100%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .cat-fact{
+              .cat-fact-header{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .cat-head-icon{
+                  width: 50px;
+                  height: 50px;
+                  background-color: #fff;
+                  mask: url("./Images//cat_icon_138789.svg") center/contain no-repeat;
+                  margin: 0px 15px;
+                }
+                &::after{
+                  content: "";
+                  display: block;
+                  height: 2px;
+                  width: 120px;
+                  background-color: #fff;
+                  border-radius: 4px;
+                  // position: fixed;
+                }
+                &::before{
+                  content: "";
+                  display: block;
+                  height: 2px;
+                  border-radius: 4px;
+                  width: 120px;
+                  background-color: #fff;
+                }
+              }
+              .cat-fact-text{
+                text-shadow: 0px 0px 10px #000;
+                text-align: justify;
+                // display: block;
+                max-width: 600px;
+                width: 100%;
+              }
+            }
+            button{
+              padding: 10px 20px;
+              text-transform: uppercase;
+              font-size: 1.2rem;
+              width: 100%;
+              border-radius: 40px;
+              border: solid 2px #fff;
+              background-color: rgba(0, 0, 0, 0.5);
+              color: #fff;
+              max-width: 320px;
+              &:hover{
+                cursor:  pointer;
+                animation: animate-hover .5s forwards;
+              }
+              &:active{
+                background-color: #262626 !important;
+              }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+    body{
+    font-size: 16px;
+    #root{
+      .App{
+        .cat-fact-wrapper{
+          .cat-fact-container{
+            max-width: 280px;
+            .cat-fact{
+              max-width: 280px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+    body{
+    font-size: 16px;
+    #root{
+      .App{
+        .cat-fact-wrapper{
+          .cat-fact-container{
+            max-width: 420px;
+            .cat-fact{
+              max-width: 420px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px){ 
+  body{
+    #root{
+      .App{
+        background-image: url("./Images/pexels-owen-10856738.jpg");
+      }
+    }
+  }
+}
+
+@keyframes animate-hover {
+  0%{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  100%{
+    background-color: rgba(51, 51, 51, 1);
+  }
 }
