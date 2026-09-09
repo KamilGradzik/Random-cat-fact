@@ -6,6 +6,7 @@
 
 `The purpose of the application is to retrieve a random fact about cats from an external API and then append that fact to the end of a text file. Additionally, a frontend application has been implemented to display the retrieved fact and fulfill the Backend application's purpose on click of the button.`
 
+
 ## Tech Stack
 
 ### Frontend
@@ -19,11 +20,51 @@
 - `.NET 9.0`
 - `C#`
 
+
 ## Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `GET` | `/api/cat-fact/fact` | `Gets single random cat fact from external API.` |
+
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have installed:
+
+- [.NET SDK](https://dotnet.microsoft.com/download)
+- [Node.js](https://nodejs.org/)
+
+### Running the Application
+
+The project consists of two parts: **Backend** and **Frontend**.
+
+#### 1. Start the Backend
+
+Open a terminal in the project root and run:
+
+```bash
+cd Backend
+dotnet run
+```
+
+The .NET Web API will start on the configured local URL.
+
+#### 2. Start the Frontend
+
+Open another terminal and run:
+
+```bash
+cd Frontend
+npm install
+npm run dev
+```
+
+The React application will start on the local development server.
+Open the URL displayed in the terminal to access the application.
+
 
 ## Credits
 
