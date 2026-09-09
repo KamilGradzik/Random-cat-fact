@@ -32,29 +32,31 @@
 
 ### Prerequisites
 
-[`Make sure you have installed:`]
+`Make sure you have installed:`
 
 - [.NET SDK 9.0](https://dotnet.microsoft.com/download)
-- [Node.js](https://nodejs.org/)
+- [Node.js v22.17.1](https://nodejs.org/)
 
 ### Running the Application
 
-[`The project consists of two parts: **Backend** and **Frontend**.`]
+`The project consists of two parts:` 
+- **Backend**
+- **Frontend**
 
 #### 1. Start the Backend
 
-Open a terminal in the project root and run:
+`Open a terminal in the project root and run:`
 
 ```bash
 cd Backend
 dotnet run
 ```
 
-The .NET Web API will start on the configured local URL.
+`The .NET Web API will start on the configured local URL.`
 
 #### 2. Start the Frontend
 
-[`Open another terminal and run:`]
+`Open another terminal and run:`
 
 ```bash
 cd Frontend
@@ -62,8 +64,8 @@ npm install
 npm run dev
 ```
 
-[`The React application will start on the local development server.
-Open the URL displayed in the terminal to access the application.`]
+`The React application will start on the local development server.
+Open the URL displayed in the terminal to access the application.`
 
 
 ## Credits
